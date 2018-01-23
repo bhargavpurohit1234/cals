@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:editable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="regrastation "
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="pass"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="RE-ENTER PASS"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/phn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@android:string/emptyPhoneNumber"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/em"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="enter email"
+        android:inputType="textEmailAddress" />
+
+    <RadioGroup
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:labelFor="@+id/radioButton">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="male" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="reg"
+        android:text="reg" />
+
+    <Button
+        android:id="@+id/lg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ab"
+        android:text="login" />
+
+</LinearLayout>
